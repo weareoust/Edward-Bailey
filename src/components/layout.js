@@ -24,23 +24,13 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="min-h-screen relative">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
+      <main>{children}</main>
+      <footer className="text-center absolute inset-x-0 bottom-0 font-display">
+        © {new Date().getFullYear()}, Standard OS
+      </footer>
+    </div>
   )
 }
 
