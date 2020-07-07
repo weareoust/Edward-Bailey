@@ -2,13 +2,17 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Hero from "../components/hero"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="fixed inset-0 flex items-center justify-center m-20">
-      <h1 className="font-display text-6xl text-center">Standard OS</h1>
-    </div>
+    <Hero />
+    <section id="watch"></section>
+    <section id="listen"></section>
+    <section id="read"></section>
+    <section id="testimonial"></section>
+    <footer></footer>
   </Layout>
 )
 

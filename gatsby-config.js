@@ -1,3 +1,4 @@
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -29,12 +30,27 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         typekit: {
-          id: 'fmy5kst'
-        }
-      }
+          id: "fmy5kst",
+        },
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: process.env.CONTENTFUL_HOST,
+      },
+    },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@edward_49788`,
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
