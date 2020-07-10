@@ -73,7 +73,7 @@ const VideoPlayer = () => {
           ></iframe>
         )}
       </div>
-      <div className="bg-black text-white grid md:grid-cols-4 p-4 px-8 col-gap-12 row-gap-4">
+      <div className="bg-black text-white grid md:grid-cols-4 p-4 px-8 col-gap-12 row-gap-4 md:row-gap-0">
         <h2 className="uppercase font-normal text-lg order-1 md:col-span-4">
           Now Playing:
           <span
