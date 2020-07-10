@@ -1,9 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import VideoPlayer from "./videoPlayer"
-import LinkDirector from "./linkDirector"
-
 import listenText from "../images/listen.svg"
 import accent from "../images/accent-2@2x.png"
 import accent1 from "../images/video-1.svg"
