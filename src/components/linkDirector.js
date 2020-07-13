@@ -42,6 +42,7 @@ export default function LinkDirector(props) {
       href={dest}
       className={props.className}
       style={{ ...props.style }}
+      onClick={props.onClick}
       {...additional}
     >
       {props.children}

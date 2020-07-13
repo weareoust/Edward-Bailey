@@ -39,7 +39,12 @@ export default function Navigation(props) {
     <div className={props.className} style={{ ...props.style }} css={props.css}>
       {data.contentfulPage.menuLinks.map((m, i) => {
         return (
-          <LinkDirector key={i} link={m} className="uppercase flex mb-2">
+          <LinkDirector
+            key={i}
+            link={m}
+            className="uppercase flex mb-2"
+            onClick={props.click}
+          >
             <img src={icons[i]} alt="Edward Bailey" className="h-6 mr-4 mb-0" />
           </LinkDirector>
         )

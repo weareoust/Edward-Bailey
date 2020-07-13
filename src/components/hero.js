@@ -23,7 +23,7 @@ const Hero = () => {
   const vidRef = useRef()
 
   useEffect(() => {
-    if (vidRef.current) {
+    if (vidRef.current && window.innerWidth > 768) {
       vidRef.current.muted = true
       vidRef.current.play()
     }

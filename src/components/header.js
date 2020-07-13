@@ -102,6 +102,7 @@ const Header = () => {
         className="font-display uppercase fixed bg-primary inset-0 flex flex-col items-center justify-center z-20 xl:hidden"
       >
         <Navigation
+          click={() => setNavOpen(!navOpen)}
           css={css`
             ${tw`mx-8`}
             a {
