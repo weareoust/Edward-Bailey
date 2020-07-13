@@ -6,6 +6,7 @@ import Hero from "../components/hero"
 import Watch from "../components/watch"
 import Listen from "../components/Listen"
 import Read from "../components/read"
+import Testimonials from "../components/testimonials"
 import texture from "../images/white-linen-paper-texture.png"
 
 const IndexPage = () => (
@@ -17,7 +18,7 @@ const IndexPage = () => (
       <Listen />
       <Read />
     </div>
-    <section id="testimonial"></section>
+    <Testimonials />
     <footer></footer>
   </Layout>
 )
