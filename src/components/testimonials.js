@@ -36,6 +36,7 @@ const Testimonials = () => {
   return (
     <section
       className="relative min-h-screen py-20 overflow-hidden"
+      id="testimonialSection"
       style={{
         background: `url(${data.contentfulPage.testimonialBackground.fluid.src}) center center/cover`,
       }}

@@ -26,7 +26,7 @@ const Hero = () => {
   }, [vidRef])
 
   return (
-    <section className="relative min-h-screen pt-32 md:pt-0">
+    <section className="relative min-h-screen pt-32 md:pt-20">
       <div className="container px-8 mx-auto">
         <div className="relative md:w-1/2 md:min-h-screen flex flex-col items-center justify-center">
           <div className="relative w-full">
@@ -48,7 +48,7 @@ const Hero = () => {
         muted
         loop
         ref={vidRef}
-        className="md:w-1/2 md:absolute inset-y-0 right-0 z-0"
+        className="md:w-1/2 md:absolute right-0 z-0 bottom-0"
       >
         <source
           src={data.contentfulPage.heroImage.file.url}

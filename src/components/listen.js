@@ -22,7 +22,10 @@ const Listen = () => {
     }
   `)
   return (
-    <section className="relative min-h-screen py-20 overflow-hidden">
+    <section
+      className="relative min-h-screen py-20 overflow-hidden"
+      id="podcastSection"
+    >
       <div className="container mx-auto flex flex-col items-center justify-center px-4">
         <div class="mb-12 relative w-1/2 md:w-1/3 self-end">
           <img

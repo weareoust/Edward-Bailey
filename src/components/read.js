@@ -35,7 +35,10 @@ const Read = () => {
     }
   `)
   return (
-    <section className="relative min-h-screen py-20 overflow-hidden">
+    <section
+      className="relative min-h-screen py-20 overflow-hidden"
+      id="blogSection"
+    >
       <div className="container mx-auto flex flex-col items-center justify-center px-4">
         <div class="mb-0 relative w-2/3 md:w-1/3 self-start">
           <img

@@ -26,7 +26,7 @@ const Footer = () => {
   `)
   return (
     <footer className="bg-black py-20 relative">
-      <div className="container mx-auto text-white">
+      <div className="container mx-4 md:mx-auto text-white">
         <div className="flex flex-col md:flex-row justify-between mb-20">
           <div>
             <h2 className="font-normal text-4xl mb-2">
