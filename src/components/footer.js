@@ -4,10 +4,6 @@ import { css } from "@emotion/core"
 import EmailForm from "./emailForm"
 import Navigation from "./navigation"
 
-import accent from "../images/test-accent-2.png"
-import bg from "../images/testimonial-accent.png"
-import oq from "../images/quote-open.svg"
-import cq from "../images/quote-close.svg"
 import linkin from "../images/in.svg"
 
 const Footer = () => {

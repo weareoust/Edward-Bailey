@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Slogan from "./slogan"
 import accent from "../images/accent-1@2x.png"
+import poster from "../images/eb.gif"
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -51,6 +52,7 @@ const Hero = () => {
         muted
         loop
         ref={vidRef}
+        poster={poster}
         className="md:w-1/2 md:absolute right-0 z-0 bottom-0"
       >
         <source
