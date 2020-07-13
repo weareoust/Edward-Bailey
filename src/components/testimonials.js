@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import LinkDirector from "./linkDirector"
+import { css } from "@emotion/core"
 
 import accent from "../images/test-accent-2.png"
 import bg from "../images/testimonial-accent.png"
@@ -37,9 +38,14 @@ const Testimonials = () => {
     <section
       className="relative min-h-screen py-20 overflow-hidden"
       id="testimonialSection"
-      style={{
-        background: `url(${data.contentfulPage.testimonialBackground.fluid.src}) center center/cover`,
-      }}
+      css={css`
+        background: url(${data.contentfulPage.testimonialBackground.fluid.src})
+          center center/cover;
+
+        @media (max-width: 768px) {
+          background-position-x: 63%;
+        }
+      `}
     >
       <div className="container mx-auto flex flex-col items-center justify-center px-4">
         <div class="relative w-4/5 md:w-2/5 self-start mt-20 mb-4">
@@ -48,7 +54,7 @@ const Testimonials = () => {
             alt="Edward Bailey"
             className="absolute top-0 right-0 transform origin-right scale-150"
           />
-          <h2 className="relative font-normal text-4xl md:text-5xl md:pt-4 mt-4">
+          <h2 className="relative font-normal text-3xl md:text-5xl md:pt-4 mt-4">
             {data.contentfulPage.testimonialSectionTitle}
           </h2>
         </div>
@@ -72,7 +78,9 @@ const Testimonials = () => {
                       alt="Edward Bailey"
                       className="absolute top-0 left-0 transform -translate-x-full -translate-y-1/2 p-2"
                     />
-                    <h2 className="text-xl font-normal">{t.quote.quote}</h2>
+                    <h2 className="font-normal text-xl md:text-3xl">
+                      {t.quote.quote}
+                    </h2>
                     <img
                       src={cq}
                       alt="Edward Bailey"

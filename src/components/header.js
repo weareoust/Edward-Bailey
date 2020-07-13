@@ -35,7 +35,7 @@ const Header = () => {
             }
           `}
         >
-          <Link to="/">
+          <Link to="/" className="block mr-6">
             <img src={logo} alt="Edward Bailey" className="mb-0" />
           </Link>
           <Navigation
@@ -103,8 +103,9 @@ const Header = () => {
       >
         <Navigation
           css={css`
+            ${tw`mx-8`}
             a {
-              ${tw`text-4xl mb-8`}
+              ${tw`text-4xl mb-8 leading-tight flex items-center`}
             }
           `}
         />

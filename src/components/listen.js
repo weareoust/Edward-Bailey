@@ -23,7 +23,7 @@ const Listen = () => {
   `)
   return (
     <section
-      className="relative min-h-screen py-20 overflow-hidden"
+      className="relative min-h-screen py-10 overflow-hidden"
       id="podcastSection"
     >
       <div className="container mx-auto flex flex-col items-center justify-center px-4">

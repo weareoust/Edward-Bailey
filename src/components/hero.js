@@ -22,7 +22,10 @@ const Hero = () => {
   const vidRef = useRef()
 
   useEffect(() => {
-    if (vidRef.current) vidRef.current.play()
+    if (vidRef.current) {
+      vidRef.current.muted = true
+      vidRef.current.play()
+    }
   }, [vidRef])
 
   return (
