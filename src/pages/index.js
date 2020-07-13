@@ -7,6 +7,7 @@ import Watch from "../components/watch"
 import Listen from "../components/Listen"
 import Read from "../components/read"
 import Testimonials from "../components/testimonials"
+import Footer from "../components/footer"
 import texture from "../images/white-linen-paper-texture.png"
 
 const IndexPage = () => (
@@ -19,7 +20,7 @@ const IndexPage = () => (
       <Read />
     </div>
     <Testimonials />
-    <footer></footer>
+    <Footer />
   </Layout>
 )
 

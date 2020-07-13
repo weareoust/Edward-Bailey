@@ -44,6 +44,7 @@ export default function LinkDirector(props) {
       style={{ ...props.style }}
       {...additional}
     >
+      {props.children}
       {props.link.displayText}
     </a>
   )
