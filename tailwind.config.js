@@ -6,7 +6,7 @@ module.exports = {
         sans: ["arial", "sans"],
       },
       colors: {
-        primary: "pink",
+        primary: "#00A5C5",
       },
     },
   },

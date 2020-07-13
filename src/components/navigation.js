@@ -36,7 +36,7 @@ export default function Navigation(props) {
     }
   `)
   return (
-    <ul className={props.className} style={{ ...props.style }} css={props.css}>
+    <div className={props.className} style={{ ...props.style }} css={props.css}>
       {data.contentfulPage.menuLinks.map((m, i) => {
         return (
           <LinkDirector key={i} link={m} className="uppercase flex mb-2">
@@ -44,6 +44,6 @@ export default function Navigation(props) {
           </LinkDirector>
         )
       })}
-    </ul>
+    </div>
   )
 }
