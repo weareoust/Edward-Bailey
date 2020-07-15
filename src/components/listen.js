@@ -27,13 +27,17 @@ const Listen = () => {
       id="podcastSection"
     >
       <div className="container mx-auto flex flex-col items-center justify-center px-4">
-        <div class="mb-12 relative w-1/2 md:w-1/3 self-end">
+        <div class="mb-12 relative w-1/2 md:w-1/5 self-end">
           <img
             src={accent}
             alt="Edward Bailey"
             className="absolute top-0 left-0 transform origin-left scale-150"
           />
-          <img src={listenText} alt="Watch" className="relative ml-auto" />
+          <img
+            src={listenText}
+            alt="Watch"
+            className="relative ml-auto md:ml-8"
+          />
         </div>
         <div className="bg-black w-full">
           <div

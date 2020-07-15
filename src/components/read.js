@@ -40,13 +40,13 @@ const Read = () => {
       id="blogSection"
     >
       <div className="container mx-auto flex flex-col items-center justify-center px-4">
-        <div class="mb-0 relative w-2/3 md:w-1/3 self-start">
+        <div class="mb-0 relative w-2/3 md:w-1/5 self-start">
           <img
             src={accent}
             alt="Edward Bailey"
             className="absolute top-0 right-0 transform origin-right scale-150"
           />
-          <img src={readText} alt="Read" className="relative mr-auto" />
+          <img src={readText} alt="Read" className="relative mr-auto md:mr-8" />
         </div>
         <div class="mb-24 md:mb-32 relative w-4/5 md:w-2/5 self-start">
           <img

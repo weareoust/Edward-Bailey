@@ -25,7 +25,7 @@ const Watch = () => {
   return (
     <section className="relative min-h-screen pb-20" id="videoSection">
       <div className="container mx-auto flex flex-col items-center justify-center px-4">
-        <div class="mb-32 md:mb-10 transform translate-y-20 md:-translate-y-10 relative w-1/2 md:w-1/3 self-start">
+        <div class="mb-32 md:mb-10 transform translate-y-20 md:-translate-y-6 relative w-1/2 md:w-1/5 self-start">
           <img
             src={accent}
             alt="Edward Bailey"

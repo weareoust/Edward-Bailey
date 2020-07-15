@@ -37,9 +37,9 @@ const Hero = () => {
             <img
               src={accent}
               alt="Edward Bailey"
-              className="absolute inset-0 transform scale-150 translate-y-10 origin-right"
+              className="absolute inset-0 transform scale-150 translate-y-10 md:translate-y-0 origin-right"
             />
-            <Slogan className="relative z-10" />
+            <Slogan className="relative z-10 md:max-w-sm" />
           </div>
           <h1 className="font-normal mt-12 text-xl md:text-2xl">
             {data.contentfulPage.heroBio.heroBio}
