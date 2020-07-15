@@ -5,6 +5,8 @@ import EmailForm from "./emailForm"
 import Navigation from "./navigation"
 
 import linkin from "../images/in.svg"
+import fb from "../images/fb.svg"
+import ig from "../images/ig.svg"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -17,6 +19,8 @@ const Footer = () => {
         }
         footerBottomText
         linkedinUrl
+        instagramUrl
+        facebookUrl
       }
     }
   `)
@@ -42,15 +46,35 @@ const Footer = () => {
             `}
           />
         </div>
-        <a
-          href={data.contentfulPage.linkedinUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="uppercase text-xl"
-        >
-          <img src={linkin} alt="linkedin" className="h-6 mr-2 mb-0 inline" />{" "}
-          Edward Bailey
-        </a>
+        <div className="flex flex-col max-w-sm">
+          <a
+            href={data.contentfulPage.linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="uppercase text-xl mb-4"
+          >
+            <img src={linkin} alt="linkedin" className="h-6 mr-2 mb-0 inline" />{" "}
+            Edward Bailey
+          </a>
+          <a
+            href={data.contentfulPage.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="uppercase text-xl mb-4"
+          >
+            <img src={ig} alt="instagram" className="h-6 mr-2 mb-0 inline" />{" "}
+            @edwardbailey1980
+          </a>
+          <a
+            href={data.contentfulPage.facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="uppercase text-xl mb-4"
+          >
+            <img src={fb} alt="facebook" className="h-6 mr-2 mb-0 inline" />{" "}
+            Edward Bailey
+          </a>
+        </div>
         <p className="absolute inset-x-0 bottom-0 text-center">
           {data.contentfulPage.footerBottomText}
         </p>

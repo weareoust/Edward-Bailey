@@ -41,7 +41,7 @@ const Hero = () => {
             />
             <Slogan className="relative z-10" />
           </div>
-          <h1 className="font-normal mt-12 text-xl md:text-4xl">
+          <h1 className="font-normal mt-12 text-xl md:text-2xl">
             {data.contentfulPage.heroBio.heroBio}
           </h1>
         </div>
