@@ -41,6 +41,7 @@ const Testimonials = () => {
       css={css`
         background: url(${data.contentfulPage.testimonialBackground.fluid.src})
           center center/cover;
+        background-position-x: 70%;
 
         @media (max-width: 768px) {
           background-position-x: 63%;
@@ -48,26 +49,26 @@ const Testimonials = () => {
       `}
     >
       <div className="container mx-auto flex flex-col items-center justify-center px-4">
-        <div class="relative w-4/5 md:w-2/5 self-start mt-20 mb-4">
+        <div class="relative w-4/5 md:w-1/2 xl:w-2/5 self-start mt-20 lg:mt-4 mb-4">
           <img
             src={accent}
             alt="Edward Bailey"
-            className="absolute top-0 right-0 transform origin-right scale-150"
+            className="absolute top-0 right-0 transform origin-right scale-150 opacity-75"
           />
-          <h2 className="relative font-normal text-3xl md:text-5xl md:pt-4 mt-4">
+          <h2 className="relative font-normal text-3xl lg:text-5xl lg:pt-4 mt-4">
             {data.contentfulPage.testimonialSectionTitle}
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 md:-mt-20 relative">
+        <div className="grid lg:grid-cols-2 mt-20 lg:-mt-20 relative">
           {data.contentfulPage.testimonials.map((t, i) => {
             return (
               <div
                 key={i}
-                className={`relative md:row-span-2 md:col-start-${
+                className={`relative lg:row-span-2 lg:col-start-${
                   i % 2 ? 1 : 2
                 }`}
               >
-                <img src={bg} alt="Edward Bailey" />
+                <img src={bg} alt="Edward Bailey" className="opacity-75" />
                 <div
                   className="absolute inset-0 flex flex-col justify-center items-start"
                   style={{ padding: "0 20% 0 24%" }}
@@ -78,7 +79,7 @@ const Testimonials = () => {
                       alt="Edward Bailey"
                       className="absolute top-0 left-0 transform -translate-x-full -translate-y-1/2 p-2"
                     />
-                    <h2 className="font-normal text-xl md:text-3xl">
+                    <h2 className="font-normal text-xl md:text-2xl">
                       {t.quote.quote}
                     </h2>
                     <img
@@ -95,7 +96,7 @@ const Testimonials = () => {
           })}
           <LinkDirector
             link={data.contentfulPage.testimonialCta}
-            className="md:absolute md:left-0 md:bottom-0 bg-black text-white text-center p-4 uppercase font-bold inline-block mt-20 text-xl"
+            className="lg:absolute lg:left-0 md:bottom-0 bg-black text-white text-center p-4 uppercase font-bold inline-block mt-20 text-xl"
           />
         </div>
       </div>

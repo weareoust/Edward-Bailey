@@ -49,7 +49,7 @@ const Hero = () => {
       </div>
       <img
         src={poster}
-        className="md:w-1/2 md:absolute right-0 z-0 bottom-0"
+        className="md:w-1/2 md:absolute right-0 z-0 bottom-0 mb-0"
         alt="Edward Bailey"
       />
     </section>
