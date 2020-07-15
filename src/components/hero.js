@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react"
+import React, { useRef, useEffect, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Slogan from "./slogan"
 import accent from "../images/accent-1@2x.png"
@@ -19,6 +19,7 @@ const Hero = () => {
       }
     }
   `)
+  const [plays, setPlays] = useState(0)
 
   const vidRef = useRef()
 
@@ -46,20 +47,11 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      <video
-        playsinline
-        autoplay
-        muted
-        loop
-        ref={vidRef}
-        poster={poster}
+      <img
+        src={poster}
         className="md:w-1/2 md:absolute right-0 z-0 bottom-0"
-      >
-        <source
-          src={data.contentfulPage.heroImage.file.url}
-          type={data.contentfulPage.heroImage.file.contentType}
-        />
-      </video>
+        alt="Edward Bailey"
+      />
     </section>
   )
 }
